@@ -1,0 +1,50 @@
+body{
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16px;
+  color: #9C9C9C;
+  background-color: #1E1E1E;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+[class*="-container"]{ /* всі класи які мають частину -container будуть мати ці стилі  */
+  max-width: 1280px;
+  margin: 0 auto; /* вирівнюємо сторінку по горизонталі */
+  padding: 0px 15px;
+}
+.button{
+  display: inline-block;
+  text-align: center;
+  padding: 16px 30px;
+  background-color: #3D96F4;
+  border-radius: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+  /* letter-spacing використовується для налаштування інтервалу між символами (літерами) у текстовому елементі.  */
+  font-size: 14px;
+  line-height: 1.43; /* 22/14 */
+  font-weight: 500;
+  transition: background-color 0.3s ease 0s;
+}
+.button-dark{
+  background-color: rgba(129, 129, 139, 0.2);
+}
+.button:hover{
+  background-color: #98c2ef;
+}
+.button-dark:hover{
+  background-color:rgba(202, 202, 221, 0.4);
+}
+
+@media (max-width: 991.98px) {
+  .button{
+    padding: 14px 20px;
+  }
+}
+.text{
+  line-height: 1.5; 
+  color: #81818B;
+}
